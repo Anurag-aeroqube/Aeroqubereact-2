@@ -5,14 +5,14 @@ import Project1 from '../assets/Project1.jpg';
 import house2 from '../assets/house2.jpg';
 import house3 from '../assets/house3.jpg';
 
-interface Project {
-  image: string;
-  title: string;
-  alt: string;
-}
+// interface Project {
+//   image: string;
+//   title: string;
+//   alt: string;
+// }
 
 const Projects: React.FC = () => {
-  const projects: Project[] = [
+  const projects = [
     { image: house4, title: 'Summer House', alt: 'Summer House' },
     { image: Project1, title: 'Brick House', alt: 'Brick House' },
     { image: house2, title: 'Renovated', alt: 'Renovated' },

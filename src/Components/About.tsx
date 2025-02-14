@@ -1,10 +1,34 @@
 
 import team2 from '../assets/team2.jpg'
 import team1 from '../assets/team1.jpg'
+import AboutCard from './AboutCard';
 
 
 function About()
 {
+  const Abouts=[
+    {image:team2,
+      name:"John Doe",
+      title:"Principal Architect",
+      contact:"contact"
+    },
+    {image:team1,
+      name:"Jone Smith",
+      title:"Principal Architect",
+      contact:"contact"
+    },
+    {image:team2,
+      name:"Mike Johnson",
+      title:"Design Director",
+      contact:"contact"
+    },
+    {image:team1,
+      name:"Sarah Wilson",
+      title:"Project Manager",
+      contact:"contact"
+    },
+
+  ]
     return(
         <section id="about" className="py-10 ">
     <div className=" mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,30 +41,11 @@ function About()
         while meeting the practical needs of our clients.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-        <div className="space-y-4">
-          <img src={team2} alt="Team member" className="w-full h-64 object-cover " />
-          <h3 className="text-xl font-semibold">John Doe</h3>
-          <p className="text-gray-600">Principal Architect</p>
-          <p className="w-full text-center border  px-4 py-2 bg-black/10 ">Contact</p>
-        </div>
-        <div className="space-y-4">
-          <img src={team1} alt="Team member" className="w-full h-64 object-cover " />
-          <h3 className="text-xl font-semibold">Jane Smith</h3>
-          <p className="text-gray-600">Design Director</p>
-          <p className="w-full text-center border  px-4 py-2 bg-black/10 ">Contact</p>
-        </div>
-        <div className="space-y-4">
-          <img src={team1} alt="Team member" className="w-full h-64 object-cover" />
-          <h3 className="text-xl font-semibold">Mike Johnson</h3>
-          <p className="text-gray-600">Project Manager</p>
-          <p className="w-full text-center border  px-4 py-2 bg-black/10 ">Contact</p>
-        </div>
-        <div className="space-y-4">
-          <img src={team2} alt="Team member" className="w-full h-64 object-cover" />
-          <h3 className="text-xl font-semibold">Sarah Wilson</h3>
-          <p className="text-gray-600">Interior Designer</p>
-          <p className="w-full text-center border  px-4 py-2 bg-black/10 ">Contact</p>
-        </div>
+        {Abouts.map((About,index)=>(
+            <AboutCard key={index} image={About.image} name={About.name} title={About.title} contact={About.contact}></AboutCard>
+          ))
+        }
+        
       </div>
     </div>
   </section>
