@@ -30,13 +30,15 @@ function About()
 
   ]
     return(
-        <section id="about" className="py-10 ">
-    <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl  text-gray-900 mb-8">About</h2>
-       <hr className="mb-6 opacity-7"/> 
-      {/* <!-- <div className="w-full h-px bg-gray-300 mx-auto mb-6"></div> --> */}
+        <section id="about" className="pt-8 sm:py-10 ">
+    <div className=" mx-auto px-2 sm:px-3 lg:px-5">
+      <div className='mb-6'>
+      <h2 className="text-2xl sm:text-3xl text-gray-900 ">About</h2>
+      <hr className=" opacity-7 mt-4"/> 
+      </div>
+      
 
-      <p className="text-lg text-gray-600 mb-8 ">
+      <p className="text-md sm:lg text-gray-600 mb-8 ">
         We are a team of passionate architects dedicated to creating sustainable and innovative spaces. Our approach combines modern aesthetics with functional design, ensuring each project tells its unique story 
         while meeting the practical needs of our clients.
       </p>

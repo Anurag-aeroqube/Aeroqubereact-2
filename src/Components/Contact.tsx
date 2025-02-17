@@ -4,11 +4,14 @@ function Contact()
 {
     return(
     
-       <section id="contact" className="py-10">
-       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl  text-gray-900 mb-8">Contact</h2>
-      <hr className="mb-6 opacity-7"/>
-      <p className="text-lg py-5">Lets get in touch and talk about your next project.</p>
+       <section id="contact" className="py-8">
+       <div className=" mx-auto px-2 sm:px-4 lg:px-6">
+        <div className="mb-10">
+        <h2 className="text-2xl sm:text-3xl text-gray-900 ">Contact</h2>
+        <hr className="mt-5 opacity-7"/>
+        </div>
+      
+      <p className="text-lg ">Lets get in touch and talk about your next project.</p>
       <form className="max-w-1xl mx-auto space-y-6">
         <div>
           <input type="text" placeholder="Name" id="name" name="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border" />
